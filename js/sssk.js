@@ -7,8 +7,7 @@ project.importSVG(sk, function(item) {
     var sssk = item;
     item.translate(view.size.width/2, view.size.height/2);
     item.scale(1);
-    var angle = new Angle(-17, 20) * Angle.random()
-		item.rotate(angle);
+    item.rotate(-19);
     item.onMouseDrag = function(event) {
     item.position += event.delta;
 }
