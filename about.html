@@ -13,6 +13,9 @@
             <script type="text/javascript" src="js/paper-full.js"></script>
             <!-- Define inlined JavaScript -->
             <script type="text/paperscript" canvas="myCanvas">>
+
+            var scope = new paper.PaperScope();
+scope.setup(myCanvas);
               // Only executed our code once the DOM is ready.
                 var sk = 'https://gist.githubusercontent.com/sroechn/8710478ab71724241f064dd0793a3781/raw/8a3e4d3dff5d1da4464d6109b8fe6aaca704d214/sk-1.svg';
 
