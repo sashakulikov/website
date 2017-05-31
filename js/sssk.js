@@ -5,7 +5,7 @@ var sssk = new Group();
 
 project.importSVG(sk, function(item) {
     var sssk = item;
-    item.translate(view.size.width/2, view.size.height/2);
+    item.translate(view.size.width/4, view.size.height/4);
     item.scale(1);
     item.rotate(-19);
     item.onMouseDrag = function(event) {
