@@ -38,6 +38,9 @@ h1, h1-projet, h1-compteur{
     color:#fff;
     display: inline;
     padding: 5px;
+    ::selection {
+  color: #8e44ad;
+}
 
 }
 h1-projet{
