@@ -81,7 +81,7 @@ h1-description{
 h1-contact{
     position:relative;
     color:#000;
-    left: 2em;
+    left: 0em;
     z-index: 12;
 }
 
@@ -89,7 +89,7 @@ h1-cv{
     display: inline;
     position:relative;
     color:#000;
-    left: 2em;
+    left: 0em;
     z-index: 12;
 }
 
