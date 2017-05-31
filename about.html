@@ -4,33 +4,17 @@
 
         <head>
             <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <script type="text/javascript" src="js/paper-full.js"></script>
+<!-- Load external PaperScript and associate it with myCanvas -->
+<script type="text/paperscript" src="js/sssk.js" canvas="myCanvas">
+</script>
             <title>Sasha Kulikov</title>
             <meta name="Sasha Kulikov" content="sssk &#124; Graphic designer"/>
 
 
 
 
-            <script type="text/javascript" src="js/paper-full.js"></script>
-            <!-- Define inlined JavaScript -->
-            <script type="text/paperscript" canvas="myCanvas">>
 
-            var scope = new paper.PaperScope();
-scope.setup(myCanvas);
-              // Only executed our code once the DOM is ready.
-                var sk = 'https://gist.githubusercontent.com/sroechn/8710478ab71724241f064dd0793a3781/raw/8a3e4d3dff5d1da4464d6109b8fe6aaca704d214/sk-1.svg';
-
-                var sssk = new Group();
-
-                project.importSVG(sk, function(item) {
-                    var sssk = item;
-                    item.translate(view.size.width/2, view.size.height/2);
-                    item.scale(1);
-                    item.rotate(-19);
-                    item.onMouseDrag = function(event) {
-                    item.position += event.delta;
-                }
-                  });
-                  </script>
 
 
             <link href="style.css" rel="stylesheet">
@@ -134,7 +118,6 @@ html {
 
         </head>
     <body>
-<canvas id="myCanvas" resize></canvas>
 
         <ul id="menu">
             <div id="header">
@@ -187,7 +170,7 @@ html {
 <br>
     <br>
 </h1-contact>
-
+<canvas id="myCanvas" resize></canvas>
 <div id="footer">
         © SK 2014–2017</div>
       </br>
