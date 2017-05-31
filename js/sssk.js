@@ -5,10 +5,13 @@ var sssk = new Group();
 
 project.importSVG(sk, function(item) {
     var sssk = item;
-    item.center = Point.random();
+        item.position = [Math.random()*view.size.width, Math.random()*view.size.height];
     item.scale(1);
     item.rotate(Math.random()*(-60));
     item.onMouseDrag = function(event) {
     item.position += event.delta;
+
+
 }
 	});
+	
