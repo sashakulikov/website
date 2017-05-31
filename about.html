@@ -3,222 +3,169 @@
     <html lang="en">
 
         <head>
-            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-            <script type="text/javascript" src="js/paper-full.js"></script>
-<!-- Load external PaperScript and associate it with myCanvas -->
-<script type="text/paperscript" src="js/sssk.js" canvas="myCanvas">
-</script>
-            <title>Sasha Kulikov</title>
-            <meta name="Sasha Kulikov" content="sssk &#124; Graphic designer"/>
+          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+          <script type="text/javascript" src="js/paper-full.js"></script>
+          <script type="text/paperscript" src="js/sssk.js" canvas="myCanvas">
+          </script>
+          <title>Sasha Kulikov</title>
+          <meta name="Sasha Kulikov" content="sssk &#124; graphic designer"/>
 
+          <link href="style.css" rel="stylesheet">
+          <style type="text/css">
 
-
-
-
-
-
-            <link href="style.css" rel="stylesheet">
-
-            <style type="text/css">
             html,
             body {
-                margin: 0;
-                overflow: hidden;
-                height: 100%;
+              margin: 0;
+              overflow: hidden;
+              height: 100%;
             }
 
-            /* Scale canvas with resize attribute to full size */
             canvas[resize] {
               position:relative;
               z-index: 1000;
-                width: 100%;
-                height: 100%;
+              width: 100%;
+              height: 100%;
             }
-            </style>
 
-            <style>
+            html {
+              cursor: crosshair;
+            }
 
-html {
-  cursor: crosshair;
-}
+            body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+            form,fieldset,input,textarea,p,blockquote,th,td {
+              padding: 0;
+              margin: 0;
+              overflow-y: scroll;
+            }
 
-                body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
-                form,fieldset,input,textarea,p,blockquote,th,td {
-                    padding: 0;
-                    margin: 0;
-                    overflow-y: scroll;
+            body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+            form,fieldset,input,textarea,p,blockquote,th,td {
+              padding: 0;
+              margin: 0;
+              overflow-y: scroll;
+            }
 
-                }
+            #header{
+              position:fixed;
+              padding: 6px 10px;
+              display:inline;
+              width: 100%;
+              text-align:left;
+              background-color: #fff;
+              z-index: 6;
+            }
 
-                <style>
-                body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
-                form,fieldset,input,textarea,p,blockquote,th,td {
-                    padding: 0;
-                    margin: 0;
-                    overflow-y: scroll;
-                }
+            h1{
+              color:#000;
+            }
 
-                #header{
-                    position:fixed;
-                    padding: 6px 10px;
-                    display:inline;
-                    width: 100%;
-                    text-align:left;
-                    background-color: #fff;
-                    z-index: 6;
+            h1-about{
+              color:#000;
+              padding: 5px 10px;
+            }
 
-                }
+            h1-description{
+              color:#000;
+            }
 
+            h1-projet{
+              color:#000;
+            }
 
-                /*mes styles typos*/
+            p{
+              color:#000;
+            }
 
-                h1{
-                    color:#000;
+            a{
+              color:#000;
+            }
 
-                }
+            ul {
+              color:#000;
+            }
 
-                h1-about{
-                    color:#000;
-                    padding: 5px 10px;
+            li {
+              display: inline;
+            }
 
+            #header{
+              top:0px;
+            }
 
-                }
+            #footer{
+              bottom:10px;
+            }
 
-                h1-description{
-                    color:#000;
-
-                }
-
-                h1-projet{
-                    color:#OOO;
-
-                }
-
-                p{
-
-                    color:#000;
-                }
-
-
-                a{
-                    color:#000;
-                }
-
-
-                ul {
-                    color:#000;
-
-                }
-                li {
-                    display: inline;
-                }
-
-
-                #header{
-                    top:0px;
-                }
-                #footer{
-                    bottom:10px;
-                }
-
-                .section{
-                    text-align:left;
-
-                }
+            .section{
+              text-align:left;
+            }
 
             </style>
-            </style>
-
-
 
         </head>
+
     <body>
 
         <ul id="menu">
-            <div id="header">
-                <a href="mailto:sssssssk@icloud.com">Sasha Kulikov</a>
-                <li>&emsp;</li>
-                <li data-menuanchor="index" class="active">txt</li>
-                <li data-menuanchor="index" class="active"><a href="index.html">jpeg</a></li>
-
-
-            </div>
+          <div id="header">
+            <a href="mailto:sssssssk@icloud.com">Sasha Kulikov</a>
+            <li>&emsp;</li>
+            <li data-menuanchor="index" class="active">txt</li>
+            <li data-menuanchor="index" class="active"><a href="index.html">jpeg</a></li>
+          </div>
         </ul>
 
-
         <div id="fullpage">
-
-            <div id="avertissement">
+          <div id="avertissement">
                 <h2-avert>
                     Sasha Kulikov <br>
                     Please turn your device
                 </h2-avert>
-            </div>
+          </div>
 
-            <div id="wrapper">
+          <div id="wrapper">
+            <div id="sectionabout">
+              <h1-about>
+              </br>
+              </br>
+              <p>Information</p></br></br>
+              b. 1993, based in St. Petersburg, Russia.</br>
 
+              <h1-contact>
+                I explore how visual perception shapes experience.</br>
+                I do graphic and digital design, branding and illustration.</br>
+                I pursue uncompromising clarity in my work.</br>
+                Currently available for collaboration.<br>
+              </br>
 
+              <h1-cv>
+                <p>Contacts</p></br></br>
+                <a href="https://t.me/ssssssssk"> +7 911 188 72 60</a><br>
+                <a href="mailto:sssssssk@icloud.com">sssssssk(at)icloud.com</a><br>
+                <a href="https://www.behance.net/sssssk">behance</a><br>
 
+              </h1-cv>
 
-                <!--about-->
-                <div id="sectionabout">
+              </h1-contact>
 
-                    <h1-about>
+              <div id="footer">
+                © SK 2018
+              </div>
 
-                        </br>
-                    </br>
-                    <p>Information</p></br></br>b. 1993, based in St. Petersburg, Russia.</br>
-                    <h1-contact>
-                    I explore how visual perception shapes experience.</br>
-                    I do graphic and digital design, branding and illustration.</br>
-                    I pursue uncompromising clarity in my work.</br>
+            </h1-about>
 
-    Currently available for collaboration.<br>
-    </br>
-    <h1-cv>
-    <p>Contacts</p></br></br>
-<a href="https://t.me/ssssssssk"> +7 911 188 72 60</a><br>
-<a href="mailto:sssssssk@icloud.com">sssssssk(at)icloud.com</a><br>
-<a href="https://www.behance.net/sssssk">behance</a><br>
+          </div>
 
-</h1-cv>
-<br>
-    <br>
-</h1-contact>
+        </div>
 
-<div id="footer">
-        © SK 2018</div>
-      </br>
-
-    <br>
-    <br>
-</h1-about>
-</div>
-
-
-
-
-
-</div><!--section-->
-
-</div> <!--wrapper-->
+      </div>
 
 <canvas id="myCanvas" resize></canvas>
 
-
-<!--[if IE]>
-<script type="text/javascript">
-var console = { log: function() {} };
-</script>
-<![endif]-->
-
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-
 <script type="text/javascript" src="jquery.fullPage.js"></script>
 <script type="text/javascript" src="mon.js"></script>
-
-
 <script type="text/javascript">
     $(document).ready(function() {
         $('#fullpage').fullpage({
@@ -229,23 +176,8 @@ var console = { log: function() {} };
             menu: '#menu',
 
             continuousVertical: true,
-
-
         });
     });
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>
