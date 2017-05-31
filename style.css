@@ -38,11 +38,12 @@ h1, h1-projet, h1-compteur{
     color:#fff;
     display: inline;
     padding: 5px;
-
 }
+
 h1-projet{
     left: 22em;
 }
+
 h1-compteur{
     padding: 5px;
     position: relative;
@@ -151,13 +152,6 @@ h2-avert{
    		object-fit: cover; /*cover video background */
    		z-index:3;
 	}
-
-
-
-
-
-
-
 
 a{
     font-family: NHaasGroteskTXPro-55Rg;

@@ -5,9 +5,9 @@ var sssk = new Group();
 
 project.importSVG(sk, function(item) {
     var sssk = item;
-    item.translate(view.size.width/4, view.size.height/4);
+    item.center = Point.random();
     item.scale(1);
-    item.rotate(-19);
+    item.rotate(Math.random()*(-60));
     item.onMouseDrag = function(event) {
     item.position += event.delta;
 }
