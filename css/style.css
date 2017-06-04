@@ -12,6 +12,11 @@
     font-weight: italic;
 }
 
+html, body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
 h1, h1-project, h1-counter {
     font-family: NHaasGroteskTXPro-55Rg;
     position: absolute;
@@ -55,29 +60,7 @@ p{
     letter-spacing: 1px;
 }
 
-h1-description{
-    position:relative;
-    color:#fff;
-    left: 2em;
-    z-index: 12;
-}
-
-h1-contact{
-    position:relative;
-    color:#000;
-    left: 0em;
-    z-index: 12;
-}
-
-h1-cv{
-    display: inline;
-    position:relative;
-    color:#000;
-    left: 0em;
-    z-index: 12;
-}
-
-h2-avert{
+h2-avoid{
     font-family: NHaasGroteskTXPro-55Rg;
     color: #000;
     -webkit-transform: rotate(90deg);
@@ -96,6 +79,7 @@ h2-avert{
     white-space: nowrap;
     font-size: 80px;
     line-height: 82px;
+    font-weight: 400;
 }
 
 .left{
@@ -116,11 +100,10 @@ h2-avert{
     bottom: 0px;
     transform&thinsp;: rotate(180deg);
     left: 45%;
-
 }
 
-
-	#myVideo{
+/*
+	#Video{
 		right: 0;
 		bottom: 0;
 		top:0;
@@ -128,13 +111,14 @@ h2-avert{
 		width: 100%;
 		height: 100%;
 		background-size: 100% 100%;
- 		background-color: black; /* in case the video doesn't fit the whole page */
-  		background-image: /* our video */;
+ 		background-color: black; / in case the video doesn't fit the whole page /
+  		background-image: / our video /;
   		background-position: center center;
   		background-size: contain;
-   		object-fit: cover; /* cover video background */
+   		object-fit: cover; / cover video background /
    		z-index:3;
 	}
+*/
 
 a{
     font-family: NHaasGroteskTXPro-55Rg;
@@ -166,10 +150,7 @@ li{
     text-align:left;
     background-color: none;
     z-index: 1;
-}
-
-#header{
-  top:0px;
+    top:0px;
 }
 
 #footer{
@@ -178,7 +159,7 @@ li{
   text-align:left;
   background: none;
   z-index: 1;
-  left: 10px;
+  left: 2em;
   }
 
 .section{
@@ -208,22 +189,26 @@ li{
     height: 13px;
 }
 
-#avertissement {
+#warning {
     display: none;
 }
 
 @media only screen and (orientation:portrait) {
-    #wrapper {
+    #fullpage {
         display: none;
+      }
+    #header {
+      display: none;
     }
-    #avertissement {
-        display: block;
+  }
+    #warning {
+d
         position: relative;
     }
 }
 
 @media only screen and (orientation:landscape) {
-    #avertissement {
+    #warning {
         display: none;
     }
 }
