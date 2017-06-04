@@ -11,15 +11,6 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
   <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$("#demosMenu").change(function(){
-		  	window.location.href = $(this).find("option:selected").attr("id") + '.html';
-			});
-		});
-	</script>
-
-
 	<!--- Call fullPage.js -->
 
   <script type="text/javascript">
@@ -27,7 +18,7 @@
           $('#fullpage').fullpage({
               verticalCentered: false,
               responsiveWidth: 600,
-              anchors: ['mosaique', 'sol', 'daf'],
+              anchors: ['p1', 'p2', 'p3'],
               menu: '#menu',
               continuousVertical: true,
           });
@@ -71,7 +62,7 @@
 		}
 
 		#slide1-1{
-			background-image: url(img/1-1.png);
+			background-image: url(img/1-1.jpg);
 			padding: 0 0 0 0;
 		}
 		#slide1-2{
@@ -99,12 +90,12 @@
 			</h2-avoid>
 	</div>
 
-<!-- MOSAIQUE			-->
+<!-- PROJECT 1			-->
 
-	<div class="section fp-section active" id="section0" data-anchor="mosaique">
+	<div class="section fp-section active" id="section0" data-anchor="p1">
 		<h1-project>
-			<li data-menuanchor="mosaique" class="active">
-			  <a href="https://www.behance.net/gallery/46440427/MOSAIQUE">Mosaique</a>
+			<li data-menuanchor="p1" class="active">
+			  <a href="https://www.behance.net/gallery/46440427/MOSAIQUE">Project One</a>
 			</li>
 		</h1-project>
 		<div class="slide fp-slide active" id="slide0-1" style="width: 50%;">
@@ -113,12 +104,12 @@
 	</div>
 
 
-<!-- SOL LEWITT			-->
+<!-- PROJECT 2			-->
 
-	<div class="section fp-section" id="section1" data-anchor="sol">
+	<div class="section fp-section" id="section1" data-anchor="p2">
 		<h1-project>
-			<li data-menuanchor="sollewitt" class="active">
-				<a href="https://www.behance.net/gallery/46440427/MOSAIQUE">Sol Lewitt</a>
+			<li data-menuanchor="p2" class="active">
+				<a href="https://www.behance.net/gallery/46440427/MOSAIQUE">Project Two</a>
 			</li>
 		</h1-project>
 		<div class="slide fp-slide active" id="slide1-1" style="width: 50%;">
@@ -133,12 +124,12 @@
 	</div>
 
 
-<!-- DAF			-->
+<!-- PROJECT 3			-->
 
-	<div class="section fp-section active" id="section2" data-anchor="daf">
+	<div class="section fp-section active" id="section2" data-anchor="p3">
 		<h1-project>
-			<li data-menuanchor="daf" class="active">
-				<a href="https://www.behance.net/gallery/46440427/MOSAIQUE">DAF</a>
+			<li data-menuanchor="p3" class="active">
+				<a href="https://www.behance.net/gallery/46440427/MOSAIQUE">Project Three</a>
 			</li>
 		</h1-project>
 		<div class="slide fp-slide active" id="slide2-1" style="width: 50%;">
