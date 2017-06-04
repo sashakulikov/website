@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Sasha Kulikov</title>
+	<meta name="description" content="Sasha Kulikov, graphic and digital designer" />
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#demosMenu").change(function(){
+		  	window.location.href = $(this).find("option:selected").attr("id") + '.html';
+			});
+		});
+	</script>
+
+
+	<!--- Call fullPage.js -->
+
+  <script type="text/javascript">
+      $(document).ready(function() {
+          $('#fullpage').fullpage({
+              verticalCentered: false,
+              responsiveWidth: 600,
+              anchors: ['mosaique', 'sol', 'daf'],
+              menu: '#menu',
+              continuousVertical: true,
+          });
+      });
+  </script>
+
+  <style>
+
+  	/* Backgrounds will cover all the section
+		* --------------------------------------- */
+
+		.section{
+			background-size: cover;
+		}
+		.slide{
+			background-size: cover;
+		}
+
+  	/* Defining each section background and styles
+		* --------------------------------------- */
+
+		#section0{
+			background-image: url(img/loading.gif);
+			padding: 0 0 0 0;
+		}
+		#section1{
+			background-image: url(img/loading.gif);
+			padding: 0 0 0 0;
+		}
+		#section2{
+			background-image: url(img/loading.gif);
+			padding: 0 0 0 0;
+		}
+
+		/* Adding background for slides
+		* --------------------------------------- */
+
+		#slide0-1{
+			background-image: url(img/0-1.jpg);
+			padding: 0 0 0 0;
+		}
+
+		#slide1-1{
+			background-image: url(img/1-1.png);
+			padding: 0 0 0 0;
+		}
+		#slide1-2{
+			background-image: url(img/1-2.jpg);
+			padding: 0 0 0 0;
+		}
+
+		#slide2-1{
+			background-image: url(img/2-1.jpg);
+			padding: 0 0 0 0;
+		}
+		</style>
+
+</head>
+
+<body>
+
+<div id="fullpage">
+
+
+<!-- MOSAIQUE			-->
+
+	<div class="section fp-section active" id="section0" data-anchor="mosaique">
+		<h1-project>
+			<li data-menuanchor="mosaique" class="active">
+			  <a href="https://www.kychsss.com">Mosaique</a>
+			</li>
+		</h1-project>
+		<div class="slide fp-slide active" id="slide0-1" style="width: 50%;">
+			<h1-counter>01 | 01</h1-counter>
+		</div>
+	</div>
+
+
+<!-- SOL LEWITT			-->
+
+	<div class="section fp-section" id="section1" data-anchor="sol">
+		<h1-project>
+			<li data-menuanchor="sollewitt" class="active">
+				<a href="https://www.kychsss.com">Sol Lewitt</a>
+			</li>
+		</h1-project>
+		<div class="slide fp-slide active" id="slide1-1" style="width: 50%;">
+			<h1-counter>01 | 02</h1-counter>
+		</div>
+		<div class="slide fp-slide active" id="slide1-2" style="width: 50%;">
+			<h1-counter>02 | 02</h1-counter>
+		</div>
+		<!-- ЭТО НЕ РАБОТАЕТ			-->
+		<div class="fp-controlArrow fp-prev"></div>
+		<div class="fp-controlArrow fp-next"></div>
+	</div>
+
+
+<!-- DAF			-->
+
+	<div class="section fp-section active" id="section2" data-anchor="daf">
+		<h1-project>
+			<li data-menuanchor="daf" class="active">
+				<a href="https://www.kychsss.com">DAF</a>
+			</li>
+		</h1-project>
+		<div class="slide fp-slide active" id="slide2-1" style="width: 50%;">
+			<h1-counter>01 | 01</h1-counter>
+		</div>
+	</div>
+
+
+</div>
+
+<!-- MENU -->
+
+	<ul id="menu">
+  	<div id="header">
+    	<a href="mailto:sssssssk@icloud.com">Sasha Kulikov</a>
+    	<li>&emsp;</li>
+    	<li data-menuanchor="index" class="active"><a href="about.html">txt</a></li>
+    	<li data-menuanchor="index" class="active"><a href="index.html">jpeg</a></li>
+  	</div>
+	</ul>
+
+</body>
+
+</html>
