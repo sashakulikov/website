@@ -13,6 +13,21 @@
 }
 
 
+/*    -webkit-transition: all 0.3s ease-out;  Safari<=6 Android<=4.3
+    transition: all 0.3s ease-out;*/
+
+
+
+
+
+
+
+
+
+
+
+/*mes styles typos*/
+
 
 h1, h1-projet, h1-compteur{
     font-family: NHaasGroteskTXPro-55Rg;
@@ -184,6 +199,7 @@ li {
 }
 
 
+/*suivant precedent*/
 .fp-controlArrow {
     width: 25%;
     height: 80%;
@@ -203,7 +219,7 @@ li {
     width: 13px;
     height: 13px;
 }
-
+/*smartphone tablet orientation*/
 #avertissement {
     display: none;
 }
