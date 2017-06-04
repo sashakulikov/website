@@ -12,9 +12,7 @@
     font-weight: italic;
 }
 
-
-
-h1, h1-projet, h1-compteur{
+h1, h1-project, h1-counter {
     font-family: NHaasGroteskTXPro-55Rg;
     position: absolute;
     z-index: 8;
@@ -25,11 +23,11 @@ h1, h1-projet, h1-compteur{
     padding: 5px;
 }
 
-h1-projet{
+h1-project{
     left: 22em;
 }
 
-h1-compteur{
+h1-counter{
     padding: 5px;
     position: relative;
     left: 18em;
@@ -37,7 +35,7 @@ h1-compteur{
     top: 5px;
 }
 
-h1-about {
+h1-about{
     font-family: NHaasGroteskTXPro-55Rg;
     position: absolute;
     z-index: 4;
@@ -130,11 +128,11 @@ h2-avert{
 		width: 100%;
 		height: 100%;
 		background-size: 100% 100%;
- 		background-color: black; /* in case the video doesn't fit the whole page*/
+ 		background-color: black; /* in case the video doesn't fit the whole page */
   		background-image: /* our video */;
   		background-position: center center;
   		background-size: contain;
-   		object-fit: cover; /*cover video background */
+   		object-fit: cover; /* cover video background */
    		z-index:3;
 	}
 
@@ -148,14 +146,15 @@ a:hover {
     text-decoration: none;
 }
 
-ul {
+ul{
     font-family: NHaasGroteskTXPro-55Rg;
     color: #fff;
     text-decoration: none;
     font-size: 1.5em;
     line-height: 1.2em;
 }
-li {
+
+li{
   display: inline;
 
 }
@@ -168,9 +167,11 @@ li {
     background-color: none;
     z-index: 1;
 }
+
 #header{
-    top:0px;
+  top:0px;
 }
+
 #footer{
   position:fixed;
   display:inline;
@@ -179,26 +180,29 @@ li {
   z-index: 1;
   left: 10px;
   }
+
 .section{
     text-align:left;
 }
-
 
 .fp-controlArrow {
     width: 25%;
     height: 80%;
     top: 15%;
 }
+
 .fp-controlArrow.fp-prev {
     left: 0;
     border: none;
-    cursor: url(imgs/cursor-left_2.png) 4 12, auto;
+    cursor: url(cursor-left_2.png);
 }
+
 .fp-controlArrow.fp-next {
     right: 0;
     border: none;
-    cursor: url(imgs/cursor-right_2.png) 4 12, auto;
+    cursor: url(cursor-right_2.png);
 }
+
 &thinsp;::-webkit-scrollbar {
     width: 13px;
     height: 13px;
@@ -207,6 +211,7 @@ li {
 #avertissement {
     display: none;
 }
+
 @media only screen and (orientation:portrait) {
     #wrapper {
         display: none;
@@ -216,8 +221,88 @@ li {
         position: relative;
     }
 }
+
 @media only screen and (orientation:landscape) {
     #avertissement {
         display: none;
     }
 }
+
+@CHARSET "ISO-8859-1";
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+
+a{
+	text-decoration:none;
+}
+
+table{
+    border-spacing: 0;
+}
+
+fieldset,img {
+    border: 0;
+}
+
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+caption,th {
+    text-align: left;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+}
+
+q:before,q:after {
+    content:'';
+}
+
+abbr,acronym {
+  border: 0;
+}
+
+body{
+	font-family: arial,helvetica;
+	color: #333;
+	color: rgba(0,0,0,0.5);
+}
+
+.wrap{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	position: relative;
+}
+
+.intro p{
+	width: 50%;
+	margin: 0 auto;
+}
+
+#menu li a{
+	text-decoration:none;
+  cursor: url("1.png"), auto, !important;
+}
+
+#menu li.active a:hover{
+  cursor: url("1.png"), auto, !important;
+}
+
+/*}
