@@ -1,13 +1,11 @@
 @font-face {
     font-family: NHaasGroteskTXPro-55Rg;
-    src: url(fonts/NHaasGroteskTXPro-55Rg.ttf);
     src: url(fonts/NHaasGroteskTXPro-55Rg.woff);
     font-weight: regular;
 }
 
 @font-face {
     font-family: NHaasGroteskTXPro-56It;
-    src: url(fonts/NHaasGroteskTXPro-56It.ttf);
     src: url(fonts/NHaasGroteskTXPro-56It.woff);
     font-weight: italic;
 }
@@ -176,13 +174,13 @@ li{
 .fp-controlArrow.fp-prev {
     left: 0;
     border: none;
-    cursor: url(cursor-left_2.png);
+    cursor: url(./cursor-left_2.png);
 }
 
 .fp-controlArrow.fp-next {
     right: 0;
     border: none;
-    cursor: url(cursor-right_2.png);
+    cursor: url(./cursor-right_2.png);
 }
 
 &thinsp;::-webkit-scrollbar {
