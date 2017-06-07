@@ -191,7 +191,7 @@ li{
     display: none;
 }
 
-@media only screen and (orientation:portrait) {
+@media only screen and (orientation: portrait) {
     #fullpage {
         display: none;
       }

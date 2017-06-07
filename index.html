@@ -14,15 +14,18 @@
 	<!--- Call fullPage.js			-->
 
   <script type="text/javascript">
-      $(document).ready(function() {
-          $('#fullpage').fullpage({
-              verticalCentered: false,
-              responsiveWidth: 600,
-              anchors: ['p1', 'p2', 'p3'],
-              menu: '#menu',
-              continuousVertical: true,
-          });
-      });
+	$(document).ready(function() {
+			$('#fullpage').fullpage({
+					verticalCentered: false,
+					responsiveWidth: 600,
+
+					anchors: ['daf', 'lendoc', 'sol'],
+					menu: '#menu',
+
+					continuousVertical: true,
+
+			});
+	});
   </script>
 
   <style>
@@ -84,6 +87,32 @@
 			background-image: url(img/2-1.jpg);
 			padding: 0 0 0 0;
 		}
+
+		#slide3-1{
+			background-image: url(img/s1-1.jpg);
+			padding: 0 0 0 0;
+		}
+
+		#slide3-2{
+			background-image: url(img/s1-2.jpg);
+			padding: 0 0 0 0;
+		}
+
+		#slide3-3{
+			background-image: url(img/s1-3.jpg);
+			padding: 0 0 0 0;
+		}
+
+		#slide3-4{
+			background-image: url(img/s1-4.jpg);
+			padding: 0 0 0 0;
+		}
+
+		#slide3-5{
+			background-image: url(img/s1-5.jpg);
+			padding: 0 0 0 0;
+		}
+
 		</style>
 
 </head>
@@ -102,9 +131,9 @@
 
 <!-- PROJECT 1			-->
 
-	<div class="section fp-section active" id="section0" data-anchor="p1">
+	<div class="section fp-section active" id="section0" data-anchor="daf">
 		<h1-project>
-			<li data-menuanchor="p1" class="active">
+			<li data-menuanchor="dafr" class="active">
 			  <a href="https://www.behance.net/gallery/47924725/Der-Mussolini-Poster">Deutsch-Amerikanische Freundschaft</a>
 			</li>
 		</h1-project>
@@ -124,9 +153,9 @@
 
 <!-- LENDOC			-->
 
-	<div class="section fp-section" id="section1" data-anchor="p2">
+	<div class="section fp-section" id="section1" data-anchor="lendoc">
 		<h1-project>
-			<li data-menuanchor="p2" class="active">
+			<li data-menuanchor="lendoc_kino" class="active">
 				<a href="https://http://www.lendoc.ru/">Lendoc</a>, poster design
 			</li>
 		</h1-project>
@@ -143,15 +172,29 @@
 
 <!-- PROJECT 3			-->
 
-	<div class="section fp-section active" id="section2" data-anchor="p3">
+	<div class="section fp-section active" id="section2" data-anchor="sol">
 		<h1-project>
-			<li data-menuanchor="p3" class="active">
-				<a href="https://www.behance.net/gallery/46440427/MOSAIQUE">Project Three</a>
+			<li data-menuanchor="sol-lewitt" class="active">
+				<a href="https://www.behance.net/gallery/46440427/MOSAIQUE">Sol LeWitt</a>, Conceptual Art
 			</li>
 		</h1-project>
-		<div class="slide fp-slide active" id="slide2-1" style="width: 50%;">
-			<h1-counter>01 | 01</h1-counter>
+		<div class="slide fp-slide active" id="slide3-1" style="width: 50%;">
+			<h1-counter>01 | 05</h1-counter>
 		</div>
+		<div class="slide fp-slide active" id="slide3-2" style="width: 50%;">
+			<h1-counter>02 | 05</h1-counter>
+		</div>
+		<div class="slide fp-slide active" id="slide3-3" style="width: 50%;">
+			<h1-counter>03 | 05</h1-counter>
+		</div>
+		<div class="slide fp-slide active" id="slide3-4" style="width: 50%;">
+			<h1-counter>04 | 05</h1-counter>
+		</div>
+		<div class="slide fp-slide active" id="slide3-5" style="width: 50%;">
+			<h1-counter>05 | 05</h1-counter>
+		</div>
+		<div class="fp-controlArrow fp-prev"></div>
+		<div class="fp-controlArrow fp-next"></div>
 	</div>
 
 
