@@ -139,7 +139,6 @@ ul{
 
 li{
   display: inline;
-
 }
 
 #header{
@@ -174,13 +173,13 @@ li{
 .fp-controlArrow.fp-prev {
     left: 0;
     border: none;
-    cursor: url(./cursor-left_2.png);
+    cursor: url(cursor-left_2.png) 4 12, auto;
 }
 
 .fp-controlArrow.fp-next {
     right: 0;
     border: none;
-    cursor: url(./cursor-right_2.png);
+    cursor: url(cursor-right_2.png) 4 12, auto;
 }
 
 &thinsp;::-webkit-scrollbar {
@@ -201,7 +200,6 @@ li{
     }
   }
     #warning {
-d
         position: relative;
     }
 }
@@ -286,5 +284,3 @@ body{
 
 #menu li.active a:hover{
 }
-
-/*}
