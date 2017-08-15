@@ -13,7 +13,8 @@
 html, body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: subpixel-antialiased;
-  cursor: crosshair;
+  /* cursor: crosshair; */
+
 }
 
 h1, h1-project, h1-counter {
@@ -25,6 +26,7 @@ h1, h1-project, h1-counter {
     color:#fff;
     display: inline;
     padding: 5px;
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 
 h1-project{
@@ -50,6 +52,21 @@ h1-about{
     width: 95%;
     display: block;
 }
+
+h1-about1{
+    font-family: NHaasGroteskTXPro-55Rg;
+    position: absolute;
+    z-index: 1000;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    left: 2em;
+    color: #fff;
+    width: 95%;
+    display: block;
+    top: 330px;
+    width: 15%;
+}
+
 
 p{
     font-family: NHaasGroteskTXPro-55Rg;
@@ -80,6 +97,7 @@ h2-avoid{
     line-height: 82px;
     font-weight: 400;
 }
+
 
 .left{
     position: absolute;
@@ -123,10 +141,7 @@ a{
     font-family: NHaasGroteskTXPro-55Rg;
     color: #fff;
     text-decoration: none;
-}
-a:hover {
-    font-family: NHaasGroteskTXPro-56It;
-    text-decoration: none;
+    cursor: url(http://www.xxix.co/images/cursor/cursor-circle-lg-yellow-fill.png) 15 15,auto !important;
 }
 
 ul{
@@ -156,7 +171,7 @@ li{
   display:inline;
   text-align:left;
   background: none;
-  z-index: 1;
+  z-index: -1000 !important;
   left: 2em;
   }
 
@@ -165,21 +180,21 @@ li{
 }
 
 .fp-controlArrow {
-    width: 25%;
-    height: 80%;
-    top: 15%;
+    width: 20%;
+    height: 100%;
+    /*top: 15%;*/
 }
 
-.fp-controlArrow.fp-prev {
+.fp-prev {
     left: 0;
     border: none;
-    cursor: url(cursor-left_2.png) 4 12, auto;
+    cursor: url("cursor-left_1.png") 15 15,auto !important;
 }
 
-.fp-controlArrow.fp-next {
-    right: 0;
+.fp-next {
+    right:0;
     border: none;
-    cursor: url(cursor-right_2.png) 4 12, auto;
+    cursor: url("cursor-right_1.png") 15 15,auto !important;
 }
 
 &thinsp;::-webkit-scrollbar {

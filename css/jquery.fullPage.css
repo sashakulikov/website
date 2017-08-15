@@ -67,16 +67,16 @@ html.fp-enabled,
     -ms-user-select: none; /* IE10+ */
     position: absolute;
     z-index: 4;
-    top: 50%;
+    top: 10%;
     cursor: pointer;
-    width: 0;
-    height: 0;
+    width: 20%;
+    height: 100%;
     border-style: solid;
     margin-top: -38px;
     -webkit-transform: translate3d(0,0,0);
     -ms-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
-}
+/*}
 .fp-controlArrow.fp-prev {
     left: 15px;
     width: 0;
@@ -87,7 +87,7 @@ html.fp-enabled,
     right: 15px;
     border-width: 38.5px 0 38.5px 34px;
     border-color: transparent transparent transparent #fff;
-}
+}*/
 .fp-scrollable {
     overflow: hidden;
     position: relative;
