@@ -2,13 +2,33 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Sasha Kulikov</title>
   <meta name="description" content="Sasha Kulikov, graphic and digital designer" />
-
-  <script type="text/javascript" src="js/paper-full.js"></script>
-  <script type="text/paperscript" src="js/sssk.js" canvas="myCanvas"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="icon" type="image/png" href="numbers.png" sizes="32x32" />
+
+  <script>
+
+    $( function() {
+      $( "#draggable" ).draggable();
+      var posx = Math.random() * ($(document).width()/1.5);
+      var posy = Math.random() * ($(document).height()/1.5);
+      var rot = Math.random()*(-60);
+      $('#draggable').css({
+        'left':posx+'px',
+        'top':posy+'px',
+        '-webkit-transform': 'rotate(' + rot + 'deg)',
+        '-moz-transform': 'rotate(' + rot + 'deg)',
+        '-ms-transform': 'rotate(' + rot + 'deg)',
+        '-o-transform': 'rotate(' + rot + 'deg)',
+        'transform': 'rotate(' + rot + 'deg)',
+    })});
+
+  </script>
 
   <style type="text/css">
 
@@ -16,7 +36,6 @@
       margin: 0;
       overflow: hidden;
       height: 100%;
-      cursor: url("css/cursor-close.png") 15 15,auto !important;
     }
 
     canvas[resize] {
@@ -44,22 +63,28 @@
       position:fixed;
       padding: 6px 10px;
       display:inline;
-      width: 27%;
+      width: 100%;
       text-align:left;
       background-color: none;
       z-index: 10;
+      top:0px;
     }
+
+    #footer{
+      bottom:10px;
+      z-index: 0;
+    }
+
+    #draggable {
+      z-index: 1000;
+    }
+
 
     h1{
       color:#000;
     }
 
     h1-about{
-      color:#000;
-      padding: 5px 10px;
-    }
-
-    h1-about1{
       color:#000;
       padding: 5px 10px;
     }
@@ -80,89 +105,88 @@
       display: inline;
     }
 
-    #header{
-      top:0px;
-    }
-
-    #footer{
-      bottom:10px;
-      z-index: -10;
-    }
-
     .section{
       text-align:left;
     }
 
   </style>
-
 </head>
-
 <body>
 
-
-
-
   <div id="fullpage">
-    <div id="warning">
-      <h2-avoid>
-        Sasha Kulikov </br>
-        Please turn your device
-      </h2-avoid>
-    </div>
-
-
-    <ul id="menu">
-      <div id="header">
-        <a href="mailto:sssssssk@icloud.com">Sasha Kulikov</a>
-        <li>&emsp;</li>
-        <li data-menuanchor="index" class="active">
-          <a href="https://sashakulikov.github.io/website/about.html">txt</a>
-        </li>
-        <li data-menuanchor="index" class="active">
-          <a href="https://sashakulikov.github.io/website/index.html">jpeg</a>
-        </li>
+      <div id="warning">
+        <h2-avoid>
+          Sasha Kulikov </br>
+          Please turn your device
+        </h2-avoid>
       </div>
-    </ul>
 
-    <div id="wrapper">
-      <div id="sectionabout">
+      <ul id="menu">
+        <div id="header">
+          <a href="mailto:sssssssk@icloud.com">Sasha Kulikov</a>
+          <li>&emsp;</li>
+          <li data-menuanchor="index" class="active">
+            <a href="https://sashakulikov.github.io/website/about.html">txt</a>
+          </li>
+          <li data-menuanchor="index" class="active">
+            <a href="https://sashakulikov.github.io/website/index.html">jpeg</a>
+          </li>
+        </div>
+      </ul>
 
-        <h1-about>
-          </br>
-          </br>
-
-          <p>Information</p>
-
-          </br>
-          </br>
-          b. 1993, based in Moscow.</br>
-          I explore how visual perception shapes experience.</br>
-          I do graphic and digital design, branding and illustration.</br>
-          I pursue uncompromising clarity in my work.</br>
-          I am available for collaboration.<br>
-          </br>
-
-          <p>Contacts</p>
-
+      <div id="wrapper">
+        <div id="sectionabout">
+          <h1-about>
+            </br>
+            </br>
+            <p>Information</p>
+            </br>
+            </br>
+            b. 1993, based in Moscow.</br>
+            I explore how visual perception shapes experience.</br>
+            I do graphic and digital design, branding and illustration.</br>
+            I pursue uncompromising clarity in my work.</br>
+            I am available for collaboration.
+            </br>
+            </br>
+            <p>Contacts</p>
+            </br>
+            </br>
+            <a href="https://t.me/ssssssssk">7 999 994 37 80</a></br>
+            <a href="mailto:sssssssk@icloud.com">sssssssk(at)icloud.com</a></br>
+            <a href="https://www.behance.net/sssssk">behance</a></br>
+            <div id="footer">
+            © SK 2013-2017</br>
+            Website was built by Sasha Kulikov</div>
           </h1-about>
-<h1-about1>
-          <a href="https://t.me/ssssssssk">7 999 994 37 80</a><br>
-          <a href="mailto:sssssssk@icloud.com" style="z-index: 2000 !important;">sssssssk(at)icloud.com</a><br>
-          <a href="https://www.behance.net/sssssk">behance</a><br>
-</h1-about1>
-<h1-about>
-          <div id="footer">
-          © SK 2013-2017</br>
-          Website was built by Sasha Kulikov</div>
-</h1-about>
-
+      </div>
     </div>
   </div>
+  <div id="draggable" class="ui-widget-content">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 282.54 193.25" style="width: 80%; height: 80%;">
+      <defs>
+        <style>
+          .cls-1{
+            fill:#efefef;
+            stroke:#000;
+            stroke-miterlimit:10;
+            cursor: all-scroll;"
+          }
+        </style>
+      </defs>
+      <title>sssk-Asset 3</title>
+      <g id="a" data-name="b">
+      <g id="c" data-name="d">
+        <ellipse class="cls-1" cx="141.99" cy="96.91" rx="137.99" ry="94.91"/>
+        <path d="M141.27,193.25c-37.44,0-72.69-9.87-99.26-27.78C14.92,147.2,0,122.75,0,96.62S14.92,46,42,27.78C68.58,9.87,103.83,0,141.27,0S214,9.87,240.53,27.78c27.09,18.26,42,42.71,42,68.84s-14.92,50.58-42,68.84C214,183.38,178.71,193.25,141.27,193.25Zm0-184.74C68.06,8.51,8.51,48,8.51,96.62s59.56,88.11,132.76,88.11S274,145.21,274,96.62,214.47,8.51,141.27,8.51Z"  style="cursor: all-scroll;"/>
+        <path d="M119.09,79c-1.31-12.13-9.39-17.36-21-17.36-9.51,0-19,3.45-19,14.51,0,10.46,13.56,12,27.23,15.1s27.11,7.85,27.11,24.5c0,18.07-17.72,25.33-33.18,25.33-19,0-35.08-9.28-35.08-30h10.7c0,14.27,11.89,20.45,24.73,20.45,10.23,0,21.52-3.21,21.52-15.46,0-11.65-13.56-13.67-27.11-16.65S67.72,92.58,67.72,77c0-17.24,15.34-24.85,30.8-24.85,17.36,0,30.56,8.2,31.27,26.87Z" style="cursor: all-scroll;"/>
+        <path d="M147,54.17h11.3V96.5l43-42.33H216L180.21,88.42l37.22,50.66H203.16L172.48,96.15l-14.15,13.2v29.73H147Z" style="cursor: all-scroll;"/>
+      </g>
+      </g>
+    </svg>
+  </div>
 
-</div>
 
-<canvas id="myCanvas" resize></canvas>
 
 </body>
-
 </html>

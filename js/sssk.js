@@ -11,6 +11,5 @@ project.importSVG(sk, function(item) {
     item.onMouseDrag = function(event) {
     item.position += event.delta;
 
-
 }
 });
