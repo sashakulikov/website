@@ -202,8 +202,8 @@ li{
 }
 
 @media only screen and (orientation:landscape) {
-  #warning {
-      position: relative;
+    #warning {
+        position: relative;
     }
 }
 

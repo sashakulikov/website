@@ -14,7 +14,9 @@
   <script>
 
     $( function() {
-      $( "#draggable" ).draggable();
+      $( "#draggable" ).draggable({
+        scroll: false
+      });
       var posx = Math.random() * ($(document).width()/1.5);
       var posy = Math.random() * ($(document).height()/1.5);
       var rot = Math.random()*(-60);
@@ -26,7 +28,7 @@
         '-ms-transform': 'rotate(' + rot + 'deg)',
         '-o-transform': 'rotate(' + rot + 'deg)',
         'transform': 'rotate(' + rot + 'deg)',
-    })});
+      })});
 
   </script>
 
@@ -174,7 +176,7 @@
           }
         </style>
       </defs>
-      <title>sssk-Asset 3</title>
+      <title>sssk-sticker</title>
       <g id="a" data-name="b">
       <g id="c" data-name="d">
         <ellipse class="cls-1" cx="141.99" cy="96.91" rx="137.99" ry="94.91"/>
@@ -185,8 +187,6 @@
       </g>
     </svg>
   </div>
-
-
 
 </body>
 </html>
