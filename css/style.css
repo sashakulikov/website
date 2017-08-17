@@ -82,19 +82,20 @@ h2-avoid{
     font-weight: 400;
 }
 
-
 .left{
     position: absolute;
     top: 50%;
     transform&thinsp;: rotate(-90deg);
     left: -20px;
 }
+
 .right{
     position: absolute;
     top: 50%;
     right: -20px;
     transform&thinsp;: rotate(90deg);
 }
+
 .bottom{
     position: absolute;
     text-align: center;
@@ -165,7 +166,6 @@ li{
 .fp-controlArrow {
     width: 20%;
     height: 100%;
-    /*top: 15%;*/
 }
 
 .fp-prev {
@@ -230,9 +230,7 @@ a {
       color: transparent;
       text-decoration: none;
       overflow: visible;
-
   }
-
 
 table{
     border-spacing: 0;
