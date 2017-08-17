@@ -16,6 +16,8 @@ html, body {
 }
 
 h1, h1-project, h1-counter {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
     font-family: NHaasGroteskTXPro-55Rg;
     position: absolute;
     z-index: 8;
@@ -24,7 +26,6 @@ h1, h1-project, h1-counter {
     color:#fff;
     display: inline;
     padding: 5px;
-    -webkit-font-smoothing: subpixel-antialiased;
 }
 
 h1-project{
@@ -144,7 +145,7 @@ li{
     display:inline;
     text-align:left;
     background-color: none;
-    z-index: 1;
+    z-index: 100;
     top:0px;
 }
 
@@ -188,22 +189,24 @@ li{
     display: none;
 }
 
-@media only screen and (orientation: portrait) {
-    #fullpage {
+
+@media only screen
+  and (orientation: portrait) {
+    #wrapper {
         display: none;
       }
-    #header {
+    #menu {
       display: none;
     }
-  }
     #warning {
-        position: relative;
+        position: absolute;
     }
 }
 
-@media only screen and (orientation:landscape) {
+@media only screen
+  and (orientation:landscape) {
     #warning {
-        position: relative;
+        display: none;
     }
 }
 
@@ -215,14 +218,21 @@ form,fieldset,input,textarea,p,blockquote,th,td {
     margin: 0;
 }
 
-a{
-	text-decoration:none;
-}
-
-a:hover {
-    font-family: NHaasGroteskTXPro-56It;
+a {
     text-decoration: none;
-}
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s
+  }
+
+  a:hover, a:focus {
+      color: transparent;
+      text-decoration: none;
+      overflow: visible;
+
+  }
+
 
 table{
     border-spacing: 0;
