@@ -191,6 +191,22 @@ li{
 
 
 @media only screen
+  and (orientation: portrait) {
+    #wrapper {
+        display: none;
+      }
+    #draggable {
+      display: none;
+    }
+    #menu {
+      display: none;
+    }
+    #warning {
+        position: absolute;
+    }
+}
+
+@media only screen
   and (orientation:landscape) {
     #warning {
         display: none;
