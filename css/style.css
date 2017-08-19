@@ -12,7 +12,6 @@
 
 html, body {
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 h1, h1-project, h1-counter {
@@ -223,10 +222,10 @@ form,fieldset,input,textarea,p,blockquote,th,td {
 
 a {
     text-decoration: none;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s
   }
 
   a:hover, a:focus {
