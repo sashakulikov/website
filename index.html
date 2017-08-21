@@ -19,9 +19,10 @@
 			$('#fullpage').fullpage({
 					verticalCentered: false,
 					responsiveWidth: 600,
-					anchors: ['daf', 'lendoc', 'sol', 'mosaique'],
+					anchors: ['daf', 'lendoc', 'sol', 'mosaique', 'ludwig'],
 					menu: '#menu',
 					continuousVertical: true,
+					continuousHorizontal:true,
 					controlArrows: true,
 			});
 	});
@@ -74,6 +75,11 @@
 
 		#section3{
 			background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400/2ea46f46440427.58540ce21710e.gif");
+			padding: 0 0 0 0;
+		}
+
+		#section4{
+			background-image: url(img/loading.gif);
 			padding: 0 0 0 0;
 		}
 
@@ -191,7 +197,15 @@
 			padding: 0 0 0 0;
 		}
 
+		#slide4-1{
+			background-image: url(img/ludwig-2.jpg);
+			padding: 0 0 0 0;
+		}
 
+		#slide4-2{
+			background-image: url(img/ludwig-1.jpg);
+			padding: 0 0 0 0;
+		}
 
 		</style>
 
@@ -325,6 +339,25 @@
 	<div class="fp-controlArrow fp-prev"></div>
 	<div class="fp-controlArrow fp-next"></div>
 </div>
+
+<!-- LUDWIG -->
+
+<div class="section" id="section1">
+	<h1-project>
+		<li data-menuanchor="ludwig" class="active" data-anchor="ludwig">
+			Poster design for Ludwig Museum
+		</li>
+	</h1-project>
+	<div class="slide" id="slide4-1" style="width: 50%;">
+		<h1-counter>01 | 02</h1-counter>
+	</div>
+	<div class="slide" id="slide4-2" style="width: 50%;">
+		<h1-counter>02 | 02</h1-counter>
+	</div>
+	<div class="fp-controlArrow fp-prev"></div>
+	<div class="fp-controlArrow fp-next"></div>
+</div>
+
 
 </div>
 </div>
