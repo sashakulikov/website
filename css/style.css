@@ -103,8 +103,8 @@ h2-avoid{
     left: 45%;
 }
 
-/*
-	#Video{
+
+	#myVideo{
 		right: 0;
 		bottom: 0;
 		top:0;
@@ -112,14 +112,14 @@ h2-avoid{
 		width: 100%;
 		height: 100%;
 		background-size: 100% 100%;
- 		background-color: black; / in case the video doesn't fit the whole page /
+ 		background-color: black;
   		background-image: / our video /;
   		background-position: center center;
   		background-size: contain;
-   		object-fit: cover; / cover video background /
-   		z-index:3;
+   		object-fit: cover;
+   		z-index: 3;
 	}
-*/
+
 
 a{
     font-family: NHaasGroteskTXPro-55Rg;
@@ -185,7 +185,8 @@ li{
 }
 
 #warning {
-    display: none;
+    /*display: none;*/
+    /*z-index: 1000;*/
 }
 
 
@@ -201,7 +202,9 @@ li{
       display: none;
     }
     #warning {
-        position: absolute;
+      top: 100px;
+      right: 200px;
+      z-index: 1000;
     }
 }
 

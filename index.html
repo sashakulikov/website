@@ -19,7 +19,7 @@
 			$('#fullpage').fullpage({
 					verticalCentered: false,
 					responsiveWidth: 600,
-					anchors: ['daf', 'lendoc', 'sol', 'mosaique', 'ludwig'],
+					anchors: ['intact', 'mosaique', 'sol', 'daf', 'lendoc', 'ludwig'],
 					menu: '#menu',
 					continuousVertical: true,
 					controlArrows: true,
@@ -54,30 +54,35 @@
 		}
 		.slide{
 			background-size: cover;
+			position: relative;
 		}
 
   	/* Defining each section background and styles
 		* --------------------------------------- */
 
 		#section0{
-   background-color: black;
-			padding: 0 0 0 0;
-		}
-		#section1{
 			background-image: url(img/loading.gif);
 			padding: 0 0 0 0;
 		}
+
+		#section1{
+			background-image: url("img/1-mosaique.gif");
+			padding: 0 0 0 0;
+		}
+
 		#section2{
 			background-image: url(img/loading.gif);
 			padding: 0 0 0 0;
 		}
 
-		#section3{
-			background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400/2ea46f46440427.58540ce21710e.gif");
+
+
+		#section4{
+			background-image: url("img/loading.gif");
 			padding: 0 0 0 0;
 		}
 
-		#section4{
+		#section5{
 			background-image: url(img/loading.gif);
 			padding: 0 0 0 0;
 		}
@@ -85,126 +90,160 @@
 		/* Adding background for slides
 		* --------------------------------------- */
 
+/*INTACT*/
+
 		#slide0-1{
-			background-image: url(img/1-11.jpg);
-			padding: 0 0 0 0;
+				position: relative;
+				overflow: hidden;
 		}
 
 		#slide0-2{
-			background-image: url(img/1-11.jpg);
+			background-image: url(img/1111.gif);
 			padding: 0 0 0 0;
 		}
 
-		/*#slide0-3{
-			background-image: url(img/0-1.gif);
+		#slide0-3{
+			background-image: url(img/1111-1.gif);
 			padding: 0 0 0 0;
-		}*/
+		}
 
-		#slide1-1{
+		#slide0-4{
+			background-image: url(img/1111-2.gif);
+			padding: 0 0 0 0;
+		}
+
+		/*MOSAIQUE*/
+
+				#slide1-1{
+					background-image: url("img/mosaique/logo.gif");
+					padding: 0 0 0 0;
+				}
+
+				#slide1-2{
+					background-image: url(img/mosaique/bells.png);
+					padding: 0 0 0 0;
+				}
+
+				#slide1-3{
+					background-image: url(img/mosaique/lp-cover.jpg);
+					padding: 0 0 0 0;
+				}
+
+				#slide1-4{
+					background-image: url(img/mosaique/pulse.jpg);
+					padding: 0 0 0 0;
+				}
+
+				#slide1-5{
+					background-image: url(img/mosaique/vinyl.jpg);
+					padding: 0 0 0 0;
+				}
+
+				#slide1-6{
+					background-image: url(img/mosaique/website.gif);
+					padding: 0 0 0 0;
+				}
+
+				#slide1-7{
+					background-image: url(img/mosaique/paralel2.jpg);
+					padding: 0 0 0 0;
+				}
+
+				#slide1-8{
+					background-image: url(img/mosaique/broshure.jpg);
+					padding: 0 0 0 0;
+				}
+
+				#slide1-9{
+					background-image: url(img/mosaique/bells1.jpg);
+					padding: 0 0 0 0;
+				}
+
+				#slide1-10{
+					background-image: url(img/mosaique/hoodie.png);
+					padding: 0 0 0 0;
+				}
+
+
+				/*SOL*/
+
+						#slide2-1{
+							background-image: url(img/1.png);
+							padding: 0 0 0 0;
+						}
+
+						#slide2-2{
+							background-image: url(img/2.png);
+							padding: 0 0 0 0;
+						}
+
+						#slide2-3{
+							background-image: url(img/3.png);
+							padding: 0 0 0 0;
+						}
+
+						#slide2-4{
+							background-image: url(img/4.png);
+							padding: 0 0 0 0;
+						}
+
+						#slide2-5{
+							background-image: url(img/5.png);
+							padding: 0 0 0 0;
+						}
+
+						#slide2-6{
+							background-image: url(img/6.png);
+							padding: 0 0 0 0;
+						}
+
+						#slide2-7{
+							background-image: url(img/7.png);
+							padding: 0 0 0 0;
+						}
+
+
+
+				/*DAF*/
+
+						#slide3-1{
+							background-image: url(img/0-1.jpg);
+							padding: 0 0 0 0;
+						}
+						#slide3-2{
+							background-image: url(img/wall.jpg);
+							padding: 0 0 0 0;
+						}
+
+
+/*LENDOC*/
+
+		#slide4-1{
 			background-image: url(img/1-1.jpg);
 			padding: 0 0 0 0;
 		}
-		#slide1-2{
+		#slide4-2{
 			background-image: url(img/1-2.jpg);
 			padding: 0 0 0 0;
 		}
 
-		#slide2-1{
-			background-image: url(img/1.png);
-			padding: 0 0 0 0;
-		}
 
-		#slide2-2{
-			background-image: url(img/2.png);
-			padding: 0 0 0 0;
-		}
 
-		#slide2-3{
-			background-image: url(img/3.png);
-			padding: 0 0 0 0;
-		}
 
-		#slide2-4{
-			background-image: url(img/4.png);
-			padding: 0 0 0 0;
-		}
+/*LUDWIG*/
 
-		#slide2-5{
-			background-image: url(img/5.png);
-			padding: 0 0 0 0;
-		}
-
-		#slide2-6{
-			background-image: url(img/6.png);
-			padding: 0 0 0 0;
-		}
-
-		#slide2-7{
-			background-image: url(img/7.png);
-			padding: 0 0 0 0;
-		}
-
-/*MOSAIQUE*/
-
-		#slide3-1{
-			background-image: url("img/mosaique/logo.gif");
-			padding: 0 0 0 0;
-		}
-
-		#slide3-2{
-			background-image: url(img/mosaique/bells.png);
-			padding: 0 0 0 0;
-		}
-
-		#slide3-3{
-			background-image: url(img/mosaique/lp-cover.jpg);
-			padding: 0 0 0 0;
-		}
-
-		#slide3-4{
-			background-image: url(img/mosaique/pulse.jpg);
-			padding: 0 0 0 0;
-		}
-
-		#slide3-5{
-			background-image: url(img/mosaique/vinyl.jpg);
-			padding: 0 0 0 0;
-		}
-
-		#slide3-6{
-			background-image: url(img/mosaique/website.gif);
-			padding: 0 0 0 0;
-		}
-
-		#slide3-7{
-			background-image: url(img/mosaique/paralel2.jpg);
-			padding: 0 0 0 0;
-		}
-
-		#slide3-8{
-			background-image: url(img/mosaique/broshure.jpg);
-			padding: 0 0 0 0;
-		}
-
-		#slide3-9{
-			background-image: url(img/mosaique/bells1.jpg);
-			padding: 0 0 0 0;
-		}
-
-		#slide3-10{
-			background-image: url(img/mosaique/hoodie.png);
-			padding: 0 0 0 0;
-		}
-
-		#slide4-1{
+		#slide5-1{
 			background-image: url(img/ludwig-2.jpg);
 			padding: 0 0 0 0;
 		}
 
-		#slide4-2{
+		#slide5-2{
 			background-image: url(img/ludwig-1.jpg);
 			padding: 0 0 0 0;
 		}
+
+
+
 
 		</style>
 
@@ -216,7 +255,6 @@
 <div id="fullpage">
 
 	<div id="warning">
-		sdfsdf
 			<h2-avoid>
 					Sasha Kulikov<br>
 					Please turn your device
@@ -225,46 +263,82 @@
 
 	<div id="wrapper">
 
-<!-- DAF -->
+<!-- INTACT / #0 -->
 
 	<div class="section" id="section0">
 		<h1-project>
-			<li data-menuanchor="index" class="active" data-anchor="daf">
-			  <a href="https://www.behance.net/gallery/47924725/Der-Mussolini-Poster">Der Mussolini</a>, poster design
+			<li data-menuanchor="index" class="active" data-anchor="intact">
+			  Intact, visual identity
 			</li>
 		</h1-project>
-		<div class="slide" id="slide0-1" style="width: 50%;">
-			<h1-counter>01 | 02</h1-counter>
+
+		<div class="slide" id="slide0-1">
+			<h1-counter>01 | 03</h1-counter>
+			<video id="myVideo" data-autoplay loop muted>
+				<source src="img/Untitled.mov" type="video/mp4">
+			</video>
 		</div>
+
 		<div class="slide" id="slide0-2" style="width: 50%;">
-			<h1-counter>02 | 02</h1-counter>
+			<h1-counter>02 | 03</h1-counter>
 		</div>
-	<div class="fp-controlArrow fp-prev"></div>
-	<div class="fp-controlArrow fp-next"></div>
+
+		<div class="slide" id="slide0-3" style="width: 50%;">
+			<h1-counter>03 | 03</h1-counter>
+		</div>
+
+		<div class="fp-controlArrow fp-prev"></div>
+<div class="fp-controlArrow fp-next"></div>
 </div>
 
 
-<!-- LENDOC -->
+<!-- MOSAIQUE / #1 -->
 
-	<div class="section" id="section1">
-		<h1-project>
-			<li data-menuanchor="lendoc" class="active" data-anchor="lendoc">
-				<a href="https://http://www.lendoc.ru/">Lendoc</a>, poster design
-			</li>
-		</h1-project>
-		<div class="slide" id="slide1-1" style="width: 50%;">
-			<h1-counter>01 | 02</h1-counter>
-		</div>
-		<div class="slide" id="slide1-2" style="width: 50%;">
-			<h1-counter>02 | 02</h1-counter>
-		</div>
-		<div class="fp-controlArrow fp-prev"></div>
-		<div class="fp-controlArrow fp-next"></div>
+<div class="section" id="section1">
+	<h1-project>
+		<li data-menuanchor="mosaique" class="active" data-anchor="mosaique">
+			<a href="https://www.behance.net/gallery/46440427/MOSAIQUE">Mosaique</a>, visual identity
+		</li>
+	</h1-project>
+	<div class="slide" id="slide1-1" style="width: 50%;">
+		<h1-counter>01 | 10</h1-counter>
 	</div>
+	<div class="slide" id="slide1-2" style="width: 50%;">
+		<h1-counter>02 | 10</h1-counter>
+	</div>
+	<div class="slide" id="slide1-3" style="width: 50%;">
+		<h1-counter>03 | 10</h1-counter>
+	</div>
+	<div class="slide" id="slide1-4" style="width: 50%;">
+		<h1-counter>04 | 10</h1-counter>
+	</div>
+	<div class="slide" id="slide1-5" style="width: 50%;">
+		<h1-counter>05 | 10</h1-counter>
+	</div>
+	<div class="slide" id="slide1-6" style="width: 50%;">
+		<h1-counter>06 | 10</h1-counter>
+	</div>
+	<div class="slide" id="slide1-7" style="width: 50%;">
+		<h1-counter>07 | 10</h1-counter>
+	</div>
+	<div class="slide" id="slide1-8" style="width: 50%;">
+		<h1-counter>08 | 10</h1-counter>
+	</div>
+	<div class="slide" id="slide1-9" style="width: 50%;">
+		<h1-counter>09 | 10</h1-counter>
+	</div>
+	<div class="slide" id="slide1-10" style="width: 50%;">
+		<h1-counter>10 | 10</h1-counter>
+	</div>
+</div>
 
 
 
-<!-- SOL -->
+
+
+
+
+<!-- SOL / #2 -->
 
 	<div class="section" id="section2">
 		<h1-project>
@@ -293,69 +367,61 @@
 		<div class="slide" id="slide2-7" style="width: 50%;">
 			<h1-counter>07 | 07</h1-counter>
 		</div>
-		<div class="fp-controlArrow fp-prev"></div>
-		<div class="fp-controlArrow fp-next"></div>
 	</div>
 
-<!-- MOSAIQUE -->
 
-<div class="section" id="section3">
-	<h1-project>
-		<li data-menuanchor="mosaique" class="active" data-anchor="mosaique">
-			<a href="https://www.behance.net/gallery/46440427/MOSAIQUE">Mosaique</a>, visual identity
-		</li>
-	</h1-project>
-	<div class="slide" id="slide3-1" style="width: 50%;">
-		<h1-counter>01 | 10</h1-counter>
-	</div>
-	<div class="slide" id="slide3-2" style="width: 50%;">
-		<h1-counter>02 | 10</h1-counter>
-	</div>
-	<div class="slide" id="slide3-3" style="width: 50%;">
-		<h1-counter>03 | 10</h1-counter>
-	</div>
-	<div class="slide" id="slide3-4" style="width: 50%;">
-		<h1-counter>04 | 10</h1-counter>
-	</div>
-	<div class="slide" id="slide3-5" style="width: 50%;">
-		<h1-counter>05 | 10</h1-counter>
-	</div>
-	<div class="slide" id="slide3-6" style="width: 50%;">
-		<h1-counter>06 | 10</h1-counter>
-	</div>
-	<div class="slide" id="slide3-7" style="width: 50%;">
-		<h1-counter>07 | 10</h1-counter>
-	</div>
-	<div class="slide" id="slide3-8" style="width: 50%;">
-		<h1-counter>08 | 10</h1-counter>
-	</div>
-	<div class="slide" id="slide3-9" style="width: 50%;">
-		<h1-counter>09 | 10</h1-counter>
-	</div>
-	<div class="slide" id="slide3-10" style="width: 50%;">
-		<h1-counter>10 | 10</h1-counter>
-	</div>
-	<div class="fp-controlArrow fp-prev"></div>
-	<div class="fp-controlArrow fp-next"></div>
-</div>
+	<!-- DAF / #3 -->
 
-<!-- LUDWIG -->
+		<div class="section" id="section3">
+			<h1-project>
+				<li data-menuanchor="daf" class="active" data-anchor="daf">
+					<a href="https://www.behance.net/gallery/47924725/Der-Mussolini-Poster">Der Mussolini</a>, poster design
+				</li>
+			</h1-project>
+			<div class="slide" id="slide3-1" style="width: 50%;">
+				<h1-counter>01 | 02</h1-counter>
+			</div>
+			<div class="slide" id="slide3-2" style="width: 50%;">
+				<h1-counter>02 | 02</h1-counter>
+			</div>
+		</div>
 
-<div class="section" id="section1">
+
+
+	<!-- LENDOC / #4 -->
+
+		<div class="section" id="section4">
+			<h1-project>
+				<li data-menuanchor="lendoc" class="active" data-anchor="lendoc">
+					<a href="https://http://www.lendoc.ru/">Lendoc</a>, poster design
+				</li>
+			</h1-project>
+			<div class="slide" id="slide4-1" style="width: 50%;">
+				<h1-counter>01 | 02</h1-counter>
+			</div>
+			<div class="slide" id="slide4-2" style="width: 50%;">
+				<h1-counter>02 | 02</h1-counter>
+			</div>
+		</div>
+
+
+
+<!-- LUDWIG / #5 -->
+
+<div class="section" id="section5">
 	<h1-project>
 		<li data-menuanchor="ludwig" class="active" data-anchor="ludwig">
 			Poster design for Ludwig Museum
 		</li>
 	</h1-project>
-	<div class="slide" id="slide4-1" style="width: 50%;">
+	<div class="slide" id="slide5-1" style="width: 50%;">
 		<h1-counter>01 | 02</h1-counter>
 	</div>
-	<div class="slide" id="slide4-2" style="width: 50%;">
+	<div class="slide" id="slide5-2" style="width: 50%;">
 		<h1-counter>02 | 02</h1-counter>
 	</div>
-	<div class="fp-controlArrow fp-prev"></div>
-	<div class="fp-controlArrow fp-next"></div>
 </div>
+
 
 </div>
 </div>
