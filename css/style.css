@@ -111,6 +111,7 @@ h2-avoid{
 		right:0;
 		width: 100%;
 		height: 100%;
+    position: relative;
 		background-size: 100% 100%;
  		background-color: black;
   		background-image: / our video /;
@@ -118,6 +119,7 @@ h2-avoid{
   		background-size: contain;
    		object-fit: cover;
    		z-index: 3;
+
 	}
 
 
