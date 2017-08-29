@@ -19,7 +19,7 @@
 			$('#fullpage').fullpage({
 					verticalCentered: false,
 					responsiveWidth: 600,
-					anchors: ['intact', 'mosaique', 'sol', 'daf', 'lendoc', 'ludwig'],
+					anchors: ['intact', 'mosaique', 'sol', 'daf', 'lendoc', 'ludwig', 'misc'],
 					menu: '#menu',
 					continuousVertical: true,
 					controlArrows: true,
@@ -93,6 +93,11 @@
 		}
 
 		#section5{
+			background-image: url("img/loading.gif");
+			padding: 0 0 0 0;
+		}
+
+		#section6{
 			background-image: url("img/loading.gif");
 			padding: 0 0 0 0;
 		}
@@ -252,8 +257,17 @@
 			padding: 0 0 0 0;
 		}
 
+/*MISC*/
 
+#slide6-1{
+	background-image: url(img/2-vinyl.jpg);
+	padding: 0 0 0 0;
+}
 
+#slide6-2{
+	background-image: url(img/1-vinyl1.jpg);
+	padding: 0 0 0 0;
+}
 
 		</style>
 
@@ -439,6 +453,21 @@
 	</div>
 </div>
 
+<!-- MISC -->
+
+<div class="section" id="section6">
+	<h1-project>
+		<li data-menuanchor="misc" class="active" data-anchor="misc">
+			Miscellaneous
+		</li>
+	</h1-project>
+	<div class="slide" id="slide6-1" style="width: 50%;">
+		<h1-counter>01 | 02</h1-counter>
+	</div>
+	<div class="slide" id="slide6-2" style="width: 50%;">
+		<h1-counter>02 | 02</h1-counter>
+	</div>
+</div>
 
 </div>
 </div>
