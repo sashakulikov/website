@@ -175,13 +175,13 @@ li{
 .fp-prev {
     left: 0;
     border: none;
-    cursor: url("cursor-left_2.png") 15 15,auto !important;
+    cursor: url("cursor-left.png") 15 15,auto !important;
 }
 
 .fp-next {
     right:0;
     border: none;
-    cursor: url("cursor-right_2.png") 15 15,auto !important;
+    cursor: url("cursor-right.png") 15 15,auto !important;
 }
 
 &thinsp;::-webkit-scrollbar {
